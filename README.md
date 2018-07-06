@@ -1,4 +1,4 @@
-# AIPractical
+# AIPracticalPrograms 
 Artificial Intelligence Practicals
 
 # List of Practical:
