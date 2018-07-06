@@ -1,0 +1,2 @@
+# AIPractical
+Artificial Intelligence Practicals
