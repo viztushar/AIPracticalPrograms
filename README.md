@@ -26,7 +26,7 @@ Artificial Intelligence Practicals
 License
 =======
 ```
-Copyright 2018 AIPracticalPrograms by @viztushar
+Copyright 2018 AIPracticalPrograms by viztushar
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
