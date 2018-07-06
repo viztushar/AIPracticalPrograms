@@ -1,7 +1,7 @@
 # AIPractical
 Artificial Intelligence Practicals
 
-##List of Practical:##
+# List of Practical:
 
 **[1. Write a program to implement Tic Tac Toe game.](https://github.com/viztushar/AIPractical/blob/master/Programs/tic-tac-toe-game.py)**
 
