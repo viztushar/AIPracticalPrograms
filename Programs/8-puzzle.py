@@ -65,8 +65,9 @@ def bfs(prob_state, goal_state):
     while q:
         current = tuple(q.pop(0))
         current[1].append(current[0])
-        if current[0] == goal_state:
-                    print(current[1])
+        if (current[0] == goal_state):
+                print(current[1])
+                break
         if (left(list(current[0])) is not None) and (current[0] not in visited):
             t = tuple((left(list(current[0])), list(current[1])))
             q.append(t)
