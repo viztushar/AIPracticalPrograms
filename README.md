@@ -5,7 +5,7 @@ Artificial Intelligence Practicals [![GitHub license](https://img.shields.io/git
 
 **[1. Write a program to implement Tic Tac Toe game.](https://github.com/viztushar/AIPractical/blob/master/Programs/tic-tac-toe-game.py)**
 
-**2. Write a program to implement 8 Puzzle problem.**
+**[2. Write a program to implement 8 Puzzle problem.](https://github.com/viztushar/AIPracticalPrograms/blob/master/Programs/8-puzzle.py)**
 
 **3. Write a program to implement Water Jug Problem.**
 
