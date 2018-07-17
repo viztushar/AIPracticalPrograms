@@ -57,13 +57,35 @@ def right(state):
 
 
 def bfs(prob_state, goal_state):
-    iterations = 0
-    visited = set()
-    queue = deque(prob_state)
+
+    visited = []  # this list is used to store all the visited states
+    q = [(prob_state,
+          [])]  # [(vertex,path to this vertex [])] this list is used as a queue and the queue contains tuples with (
+    # state and path)
+    while q:
+        current = tuple(q.pop(0))
+        current[1].append(current[0])
+        if current[0] == goal_state:
+                    print(current[1])
+        if (left(list(current[0])) is not None) and (current[0] not in visited):
+            t = tuple((left(list(current[0])), list(current[1])))
+            q.append(t)
+        if (right(list(current[0])) is not None) and (current[0] not in visited):
+            t = tuple((right(list(current[0])), list(current[1])))
+            q.append(t)
+        if (up(list(current[0])) is not None) and (current[0] not in visited):
+            t = tuple((up(list(current[0])), list(current[1])))
+            q.append(t)
+        if (down(list(current[0])) is not None) and (current[0] not in visited):
+            t = tuple((down(list(current[0])), list(current[1])))
+            q.append(t)
+        if current[0] not in visited:
+            visited.append(current[0])
 
 
 
-afterup = up(goal_state)
 
-afterleft = left(afterup)
-print(np.array(afterleft).reshape(3, 3))
+
+afterup =  [1,2,3,0,4,5,6,7,8]
+
+bfs(afterup,goal_state)
