@@ -1,7 +1,7 @@
 import numpy as np
 from collections import deque
 
-goal_state = [1, 2, 3, 4, 5, 6, 7, 8, 0]
+goal_state = [1, 2, 3, 4, 5, 7, 6, 8, 0]
 
 
 def up(state):
@@ -57,17 +57,15 @@ def right(state):
 
 
 def bfs(prob_state, goal_state):
-
-    visited = []  # this list is used to store all the visited states
-    q = [(prob_state,
-          [])]  # [(vertex,path to this vertex [])] this list is used as a queue and the queue contains tuples with (
-    # state and path)
+    visited = []
+    q = [(prob_state, [])]
     while q:
         current = tuple(q.pop(0))
         current[1].append(current[0])
-        if (current[0] == goal_state):
-                print(current[1])
-                break
+        if current[0] == goal_state:
+            print(np.array(current[1]))
+            print(len(current[1]))
+            break
         if (left(list(current[0])) is not None) and (current[0] not in visited):
             t = tuple((left(list(current[0])), list(current[1])))
             q.append(t)
@@ -84,9 +82,6 @@ def bfs(prob_state, goal_state):
             visited.append(current[0])
 
 
-
-
-
-afterup =  [1,2,3,0,4,5,6,7,8]
-
-bfs(afterup,goal_state)
+afterup = [1, 2, 3, 0, 4, 5, 6, 7, 8]
+print(np.array(goal_state).reshape(3,3))
+bfs(afterup, goal_state)
