@@ -7,7 +7,7 @@ Artificial Intelligence Practicals [![GitHub license](https://img.shields.io/git
 
 **[2. Write a program to implement 8 Puzzle problem.](https://github.com/viztushar/AIPracticalPrograms/blob/master/Programs/8-puzzle.py)**
 
-**3. Write a program to implement Water Jug Problem.**
+**[3. Write a program to implement Water Jug Problem.](https://github.com/viztushar/AIPracticalPrograms/blob/master/Programs/water-jug.py)**
 
 **4. Write a program to implement Travelling Salesman Problem.**
 
